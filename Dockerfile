@@ -1,7 +1,7 @@
 FROM node:lts-alpine
 
 # Create app directory
-WORKDIR /DockerHW/usr/src/app
+WORKDIR /usr/src/app
 
 RUN addgroup app && adduser -S -G app app && chown -R app /DockerHW/usr/src/app
 
