@@ -10,6 +10,8 @@ RUN addgroup app && adduser -S -G app app && chown -R app /DockerHW/usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
+WORKDIR /DockerHW
+
 RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
